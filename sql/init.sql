@@ -1,0 +1,13 @@
+DROP SCHEMA IF EXISTS nodetutorial;
+CREATE SCHEMA nodetutorial;
+
+USE nodetutorial;
+DROP TABLE IF EXISTS students;
+
+CREATE TABLE IF NOT EXISTS students (
+	id INT(100) AUTO_INCREMENT NOT NULL,
+	name VARCHAR(100) NOT NULL,
+	studentID INT(8) NOT NULL,
+	major VARCHAR(100) NOT NULL,
+	PRIMARY KEY (id)
+);
