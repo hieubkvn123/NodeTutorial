@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Vue JS Introduction</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="../include/vue.min.js"></script>
+		<script src="../js/template.js"></script>
+	</head>
+
+	<body>
+		<div id='intro'>
+			<p>First Name : {{ first_name }}</p>
+			<p>Last Name  : {{ last_name }}</p>
+
+			<!--To render html template, we need to use-->
+			<!--the "v-html" directive-->
+			<div v-html="html_content"></div>
+
+			<!--To assign any attribute to html tag-->
+			<!--We need to use the "v-bind" directive-->
+			<img v-bind:src="imgrc"/>
+		</div>
+	</body>
+</html>
